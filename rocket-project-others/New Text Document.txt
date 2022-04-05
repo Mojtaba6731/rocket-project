@@ -1,0 +1,11 @@
+-[ ] anxios
+-[ ] cors proxy
+-[ ] helmey asynce
+-[ ] oauth github login
+-[ ] remap react router
+-[ ] fortune-wheel or slot-Machine?
+-[ ] 
+
+var length = 4;
+var number = 15;
+let x = new Array(length - number.toString().length + 1).join('0') + number;
