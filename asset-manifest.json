@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rocket-project/static/css/main.02300d63.css",
-    "main.js": "/rocket-project/static/js/main.3d3b0d61.js",
+    "main.js": "/rocket-project/static/js/main.ed93e0cf.js",
     "index.html": "/rocket-project/index.html",
     "main.02300d63.css.map": "/rocket-project/static/css/main.02300d63.css.map",
-    "main.3d3b0d61.js.map": "/rocket-project/static/js/main.3d3b0d61.js.map"
+    "main.ed93e0cf.js.map": "/rocket-project/static/js/main.ed93e0cf.js.map"
   },
   "entrypoints": [
     "static/css/main.02300d63.css",
-    "static/js/main.3d3b0d61.js"
+    "static/js/main.ed93e0cf.js"
   ]
 }
