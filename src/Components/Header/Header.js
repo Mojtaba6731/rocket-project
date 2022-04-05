@@ -46,7 +46,7 @@ export default function Header() {
         icon={
           <img
             className="w-4 sm:w-5 md:w-6"
-            src="/img/rocket-logo.svg"
+            src="./img/rocket-logo.svg"
             alt="slider-img-1"
           />
         }
