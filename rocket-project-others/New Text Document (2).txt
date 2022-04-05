@@ -1,3 +1,0 @@
-CLient_secret:
-5d7e1db39a853d5368776906428d702faa8441db
-nemoneh:http://localhost:3000/?code=1e8ead86e9e28979efda
