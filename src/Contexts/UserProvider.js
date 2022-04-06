@@ -13,11 +13,11 @@ export default function UserProvider({ children }) {
     localStorage.getItem("authToken")
   );
 
-  useEffect(() => {
-    if (isUserLogedIn) {
-      _setUser(user);
-    }
-  }, [isUserLogedIn]);
+  // useEffect(() => {
+  //   if (isUserLogedIn) {
+  //     _setUser(user);
+  //   }
+  // }, [isUserLogedIn]);
 
   const setAuthToken = (token) => {
     _setAuthToken(token);

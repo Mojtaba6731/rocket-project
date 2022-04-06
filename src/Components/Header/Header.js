@@ -14,7 +14,6 @@ export default function Header() {
   const [current, setCurrent] = useState();
   const [userInfo, setUserInfo] = useState();
   const { user, setlogOut } = React.useContext(UserContext);
-
   useEffect(() => {
     if (user) {
       setUserInfo({
@@ -46,7 +45,7 @@ export default function Header() {
         icon={
           <img
             className="w-4 sm:w-5 md:w-6"
-            src="/img/rocket-logo.svg"
+            src="./img/rocket-logo.svg"
             alt="slider-img-1"
           />
         }
@@ -88,7 +87,7 @@ export default function Header() {
         <Menu.Item key="user-profile">
           <Link to="/Profile" className="flex items-center">
             <img
-              src="https://avatars.githubusercontent.com/u/78034349?v=4"
+              src={userInfo.avatar}
               alt="avatar"
               className="w-5 h-5 rounded-full mr-2"
             />
@@ -125,7 +124,7 @@ export default function Header() {
         key="Rocket"
         className="flex items-center mr-auto"
         icon={
-          <img className="w-6" src="/img/rocket-logo.svg" alt="slider-img-1" />
+          <img className="w-6" src="./img/rocket-logo.svg" alt="slider-img-1" />
         }
         onClick={handleClick}
       >

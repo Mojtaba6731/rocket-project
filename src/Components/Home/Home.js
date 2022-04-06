@@ -60,7 +60,7 @@ export default function Home() {
         <Carousel dots={false} className="w-screen overflow-hidden" autoplay>
           <div className="flex flex-col md:flex-row justify-center items-center md:space-x-10 md:w-screen h-full px-4 md:px-0">
             <div className="w-full sm:w-4/6 lg:w-2/6 flex justify-center items-center">
-              <img src="/img/slider-img-1.jpg" alt="slider-img-1" />
+              <img src="./img/slider-img-1.jpg" alt="slider-img-1" />
             </div>
             <div className="w-full pr-10 lg:w-2/6 flex-col items-center justify-center">
               <div className="flex items-center">

@@ -67,53 +67,57 @@ export default function EditProfile() {
     }, 1000);
   };
   const editHandler = () => {
-    console.log(authToken);
-    setEditLoading(true);
-    axios
-      .patch(
-        GITHUB_API_URL + "user",
-        {
-          name: editedName,
-          email: editedEmail,
-          blog: editedBlog,
-          company: editedCompany,
-          location: editedLocation,
-          bio: editedBio,
-        },
-        {
-          headers: {
-            Authorization: authToken,
-            Accept: "application/vnd.github.v3+json",
+    if (!authToken) {
+      message.info("It's Demo version");
+      discardHandler();
+    } else {
+      setEditLoading(true);
+      axios
+        .patch(
+          GITHUB_API_URL + "user",
+          {
+            name: editedName,
+            email: editedEmail,
+            blog: editedBlog,
+            company: editedCompany,
+            location: editedLocation,
+            bio: editedBio,
           },
-        }
-      )
-      .then((res) => {
-        setUser({
-          name: res.data.login,
-          coin: 1000,
-          id: res.data.id,
-          dataAded: new Date().getTime(),
-          moreData: res.data,
-        });
-        setTimeout(() => {
-          if (res.status === 200) {
-            message.success(
-              "Your profile information is successfully changed."
-            );
-            setTimeout(() => {
-              message.info("If you want to see result, refresh the page", 4);
-            }, 3000);
-            setEditLoading(false);
-            history.push("/Profile");
-            window.location.reload();
-            setUser(res);
-          } else {
-            message.error("oops! something went wrong :(");
-            history.push("/Profile");
-            console.log(res);
+          {
+            headers: {
+              Authorization: authToken,
+              Accept: "application/vnd.github.v3+json",
+            },
           }
-        }, 2000);
-      });
+        )
+        .then((res) => {
+          setUser({
+            name: res.data.login,
+            coin: 1000,
+            id: res.data.id,
+            dataAded: new Date().getTime(),
+            moreData: res.data,
+          });
+          setTimeout(() => {
+            if (res.status === 200) {
+              message.success(
+                "Your profile information is successfully changed."
+              );
+              setTimeout(() => {
+                message.info("If you want to see result, refresh the page", 4);
+              }, 3000);
+              setEditLoading(false);
+              history.push("/Profile");
+              window.location.reload();
+              setUser(res);
+            } else {
+              message.error("oops! something went wrong :(");
+              history.push("/Profile");
+              console.log(res);
+            }
+          }, 2000);
+        });
+    }
   };
 
   return (
