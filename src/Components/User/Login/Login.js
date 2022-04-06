@@ -32,7 +32,7 @@ export default function Login() {
 
   // a function that set a fake user for Demo version's Login.
   // Notice: however if anyone set the true CLIENT_ID and CLIENT_SECRET,
-  // then it will links the user to Login with Github accn
+  // then it will links the user to Login with Github acc
 
   const isItDemoVersion = () => {
     if ((CLIENT_ID || CLIENT_SECRET) === null) {
