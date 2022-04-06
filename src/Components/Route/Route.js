@@ -9,7 +9,7 @@ export default function Routers() {
   const { isUserLogedIn } = React.useContext(UserContext);
 
   return (
-    <BrowserRouter basename="/https://mojtaba6731.github.io/rocket-project/">
+    <BrowserRouter basename="rocket-project">
       <Header />
       <Switch>
         {routes.map((route) => {
