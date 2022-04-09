@@ -121,12 +121,12 @@ export default function EditProfile() {
   };
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-slate-50 ">
+    <div className="w-screen h-full md:h-screen flex justify-center items-center bg-slate-50 ">
       <Helmet>
         <title>Edit-Profile | Rocket</title>
       </Helmet>
-      <div className="w-3/5 h-4/5 bg-white shadow-md grid grid-rows-4 grid-cols-2">
-        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b border-r">
+      <div className="mb-16 w-full sm:w-4/5 md:w-4/5 lg:w-3/5 h-full md:h-4/5 bg-white shadow-md grid grid-cols-1 md:grid-rows-4 md:grid-cols-2">
+        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b md:border-r">
           <p className="font-medium text-slate-500">Name:</p>
           <Form {...layout} form={form} name="edit-name">
             <Input
@@ -150,7 +150,7 @@ export default function EditProfile() {
             />
           </Form>
         </div>
-        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b border-r">
+        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b md:border-r">
           <p className="font-medium text-slate-500">Blog:</p>
           <Input
             allowClear
@@ -170,7 +170,7 @@ export default function EditProfile() {
             placeholder={editedCompany === "" ? "Company" : editedCompany}
           />
         </div>
-        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b border-r">
+        <div className="px-8 py-4 leading-3 flex flex-col justify-center border-b md:border-r">
           <p className="font-medium text-slate-500">Location:</p>
           <Input
             allowClear
@@ -190,7 +190,7 @@ export default function EditProfile() {
             placeholder={editedBio === "" ? "add a bio" : editedBio}
           />
         </div>
-        <div className="col-span-2 flex items-center justify-center space-x-4">
+        <div className="md:col-span-2 flex items-center justify-center space-x-4 my-8 md:my-0">
           <Button loading={editLoading} type="default" onClick={editHandler}>
             Save Changes
           </Button>
