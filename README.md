@@ -1,4 +1,4 @@
-# Rocket Project
+# Rocket Project🚀
 <h3>What is the Rocket?</h3>
 <p>A website I built using React and Tailwind. Also with the ability to Login using Github-OAuth and Github Rest API.<br/> also this website built fully responsive.</p>
 <br/>
@@ -17,4 +17,4 @@
 
  and with actual Login feature:
  <br/>
- ---> <a href="https://www.behance.net/gallery/141035739/Rocket-Project">there is a preview on my Behance acc</a>
+ ---> <a href="https://www.behance.net/gallery/141035739/Rocket-Project">there is a **preview** on my Behance acc</a>
