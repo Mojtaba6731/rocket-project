@@ -1,5 +1,5 @@
 # Rocket Project🚀
-<h3>What is the Rocket?</h3>
+<h3>What's the Rocket?</h3>
 <p>A website I built using React and Tailwind. Also with the ability to Login using Github-OAuth and Github Rest API.<br/> also this website built fully responsive.</p>
 <br/>
 <br/>
